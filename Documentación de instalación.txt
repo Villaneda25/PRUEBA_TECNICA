@@ -1,0 +1,64 @@
+
+Documentación para brir archivo y para crear uno desde cero.
+
+Principalmente para Crear una API con Flask en Python, HTML y CSS este seria el paso a paso:
+
+ Paso 1: Instalar Python
+1. ir al sitio web oficial de Python (https://www.python.org/).
+2. Haz clic en el botón de descarga para la última versión estable de Python.
+3. Sigue las instrucciones de instalación que te proporcionen.
+
+ Paso 2: Instalar Flask
+1. Abrir tu terminal o símbolo del sistema.
+2. Escribe el siguiente comando y presiona Enter: 
+    pip install Flask
+   
+   Esto instalará Flask, que es un framework web de Python.
+
+Paso 3: Crear un proyecto Flask
+1. Crear  una nueva carpeta en el equipo para el  proyecto.
+2. Dentro de esa carpeta, crea un archivo llamado `app.py`. Este será tu archivo principal de Flask.
+
+Paso 4: 
+1. Abre `app.py` en un editor de texto o IDE.
+2. Escribe el siguiente código:
+
+se pega el codigo .py
+
+Paso 5: Ejecutar la aplicación Flask
+1. Desde la terminal, navega hasta la carpeta donde guardaste `app.py`.
+2. Escribe el siguiente comando y presiona Enter:
+   ```
+   python app.py
+   ```
+   Esto iniciará la aplicación Flask.
+
+Paso 6: Crear páginas HTML y estilos CSS
+1. En la misma carpeta del  proyecto, crea una carpeta llamada `templates`.
+2. Dentro de `templates`, crea un archivo llamado `index.html`.
+3. Escribe tu código HTML en `index.html`.
+4. Crea otra carpeta llamada `static`.
+5. Dentro de `static`, crea una carpeta llamada `css`.
+6. Dentro de `css`, crea un archivo llamado `styles.css`.
+7. Escribe tu código CSS en `styles.css`.
+
+Paso 7: Conectar el HTML y CSS con Flask
+1. Dentro de `app.py`, modifica la función `hello_world()` para renderizar tu plantilla HTML y servir los archivos estáticos.
+   
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+Paso 8: Ejecutar la  aplicación nuevamente
+1. Detén la ejecución actual de la aplicación Flask si aún está corriendo (presiona `Ctrl + C` en la terminal).
+2. Ejecuta la aplicación nuevamente usando `python app.py`.
+3. Abre el  navegador web y ve a la dirección `http://localhost:5000`  o la que se deje  por defecto para ver la página HTML con estilos CSS.

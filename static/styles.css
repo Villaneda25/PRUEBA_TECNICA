@@ -1,0 +1,73 @@
+/* Estilo para todo el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno exterior */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Relleno dentro del contenedor */
+}
+
+/* Estilo para los títulos */
+h1 {
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para los formularios */
+form {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+form label {
+    display: block; /* Muestra la etiqueta en una nueva línea */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Estilo para los campos de entrada de texto */
+form input[type="text"] {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 8px; /* Relleno interno */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Tamaño del borde incluido en el ancho */
+}
+
+/* Estilo para los botones de envío en el formulario */
+form input[type="submit"] {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Relleno interno */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo para los botones de envío cuando se pasa el cursor por encima */
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Cambia el color de fondo */
+}
+
+/* Estilo para las listas sin viñetas */
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el relleno */
+}
+
+/* Estilo para los elementos de la lista */
+li {
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para limpiar el flotado de los elementos de la lista */
+li::after {
+    content: ""; /* Contenido vacío */
+    display: block; /* Muestra en una nueva línea */
+    clear: both; /* Limpia el flotado */
+}

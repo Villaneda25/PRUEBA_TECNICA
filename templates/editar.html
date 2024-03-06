@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Editar Libro</title>
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título de la página -->
+        <h1>Editar Libro</h1>
+        <!-- Formulario para editar un libro -->
+        <form method="post">
+            <!-- Campo oculto para almacenar el título original del libro -->
+            <input type="hidden" name="titulo_original" value="{{ libro.titulo }}">
+            <!-- Etiqueta y campo para editar el título del libro -->
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo" value="{{ libro.titulo }}"><br><br>
+            <!-- Etiqueta y campo para editar el autor del libro -->
+            <label for="autor">Autor:</label><br>
+            <input type="text" id="autor" name="autor" value="{{ libro.autor }}"><br><br>
+            <!-- Etiqueta y campo para editar el año de publicación del libro -->
+            <label for="anio_publicacion">Año de Publicación:</label><br>
+            <input type="text" id="anio_publicacion" name="anio_publicacion" value="{{ libro.anio_publicacion }}"><br><br>
+            <!-- Etiqueta y campo para editar el género del libro -->
+            <label for="genero">Género:</label><br>
+            <input type="text" id="genero" name="genero" value="{{ libro.genero }}"><br><br>
+            <!-- Botón para guardar los cambios -->
+            <input type="submit" value="Guardar Cambios">
+        </form>
+    </div>
+</body>
+</html>
